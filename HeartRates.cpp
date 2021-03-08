@@ -17,62 +17,62 @@ std::string toString(T val)
 
 HeartRates::HeartRates ( string fname, string lname, int mm, int dd, int yy, int month, int day, int year )
 {
-   setFirstName(fname);
-   setLastName(lname);
-   setMonthOfBirth(mm);
-   setDayOfBirth(dd);
-   setYearOfBirth(yy);
+   setFName(fname);
+   setLName(lname);
+   setMOB(mm);
+   setDOB(dd);
+   setYOB(yy);
    setCurrentMonth (month);
    setCurrentDay (day);
    setCurrentYear (year);
 }
 
-void HeartRates::setFirstName ( string fname)
+void HeartRates::setFName ( string fname)
 {
    firstName = fname;
 }
 
-string HeartRates::getFirstName ()
+string HeartRates::getFName ()
 {
    return firstName;
 }
 
-void HeartRates::setLastName (string lname)
+void HeartRates::setLName (string lname)
 {
    lastName = lname;
 }
 
-string HeartRates::getLastName ()
+string HeartRates::getLName ()
 {
    return lastName;
 }
 
-void HeartRates::setMonthOfBirth (int mm)
+void HeartRates::setMOB (int mm)
 {
    monthOfBirth = mm;
 }
 
-int HeartRates::getMonthOfBirth ()
+int HeartRates::getMOB ()
 {
    return monthOfBirth;
 }
 
-void HeartRates::setDayOfBirth (int dd)
+void HeartRates::setDOB (int dd)
 {
    dayOfBirth = dd;
 }
 
-int HeartRates::getDayOfBirth ()
+int HeartRates::getDOB ()
 {
    return dayOfBirth;
 }
 
-void HeartRates::setYearOfBirth(int yy)
+void HeartRates::setYOB(int yy)
 {
    yearOfBirth = yy;
 }
 
-int HeartRates::getYearOfBirth()
+int HeartRates::getYOB()
 {
    return yearOfBirth;
 }
@@ -110,9 +110,9 @@ int HeartRates::getCurrentYear ()
 int HeartRates::getAge()
 {
    int delta = 0;
-   if (getMonthOfBirth() > currentMonth) delta = -1;
-   if ((getMonthOfBirth() == currentMonth) && (getDayOfBirth() > currentDay)) delta = -1;
-   return (currentYear - getYearOfBirth() + delta);
+   if (getMOB() > currentMonth) delta = -1;
+   if ((getMOB() == currentMonth) && (getDOB() > currentDay)) delta = -1;
+   return (currentYear - getYOB() + delta);
 }
 
 int HeartRates::getMaximumHeartRate()

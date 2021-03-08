@@ -1,4 +1,4 @@
-/* File: HeartRates.h */
+/* File: HeartRates.h*/
 
 #include <string>
 
@@ -8,16 +8,16 @@ class HeartRates
 {
    public:
        HeartRates ( string fname, string lname, int mm, int dd, int yy, int month, int day, int year );
-       void setFirstName ( string fname);
-       string getFirstName ();
-       void setLastName (string lname);
-       string getLastName ();
-       void setMonthOfBirth (int mm);
-       int getMonthOfBirth ();
-       void setDayOfBirth (int dd);
-       int getDayOfBirth ();
-       void setYearOfBirth(int yy);
-       int getYearOfBirth();
+       void setFName ( string fname);
+       string getFName ();
+       void setLName (string lname);
+       string getLName ();
+       void setMOB (int mm);
+       int getMOB ();
+       void setDOB (int dd);
+       int getDOB ();
+       void setYOB(int yy);
+       int getYOB();
        void setCurrentMonth (int month);
        int getCurrentMonth();
        void setCurrentDay (int day);

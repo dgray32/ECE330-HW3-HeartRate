@@ -28,9 +28,9 @@ int main()
    cout << "Current Year: ";
    cin >> year;
    HeartRates person1( fname, lname, mm, dd, yy, month, day, year);
-   cout << "Your name is " << person1.getFirstName() << " " << person1.getLastName() <<
-       ". Your birthday is " << person1.getMonthOfBirth() << "/" << person1.getDayOfBirth() <<
-       "/" << person1.getYearOfBirth() << endl;
+   cout << "Your name is " << person1.getFName() << " " << person1.getLName() <<
+       ". Your birthday is " << person1.getMOB() << "/" << person1.getDOB() <<
+       "/" << person1.getYOB() << endl;
    cout << "Your age is " << person1.getAge() << " years!" << endl;
    cout << "Your max heart rate is " << person1.getMaximumHeartRate() << endl;
    cout << "Your target heart rate is " << person1.getTargetHeartRate() << endl;
